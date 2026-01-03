@@ -6,7 +6,8 @@ import java.util.Stack;
 /*
 Given a circular integer array nums (i.e., the next element of nums[nums.length - 1] is nums[0]), return the next greater number for every element in nums.
 
-The next greater number of a number x is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn't exist, return -1 for this number.
+The next greater number of a number x is the first greater number to its traversing-order next in the array, which means you could search circularly to
+find its next greater number. If it doesn't exist, return -1 for this number.
 
 
 
@@ -81,12 +82,13 @@ class Solution503 {
 
 
     Optimal Approach using less memory:-
-
+    ======================================================================================================================================================================
     Optimised Algorithm : The optimised solution avoids array duplication by simulating circular traversal using modulo indexing.
     It iterates from 2n−1 to 0, accessing elements with i % n. A monotonic decreasing stack stores potential next greater elements.
     During the first pass, the stack is built, and during the second pass (i < n), results are populated.
     This ensures each element finds its next greater element in circular order.
     The approach achieves O(n) time and O(n) space complexity while improving readability, reducing memory usage, and following the standard interview-preferred pattern.
+    ======================================================================================================================================================================
 
      */
 
