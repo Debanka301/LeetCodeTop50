@@ -86,6 +86,9 @@ public class LC34 {
         int nums[] = {5,7,7,8,8,10};
         int target = 8;
         SolutionLC34 solutionLC34 = new SolutionLC34();
-        System.out.println(Arrays.asList(solutionLC34.searchRange(nums,target)));
+        int result[] = solutionLC34.searchRange(nums,target);
+        for(int i=0;i<result.length;i++){
+            System.out.println(result[i]);
+        }
     }
 }
