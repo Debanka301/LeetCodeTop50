@@ -1,5 +1,6 @@
 package Stack;
 
+import java.util.Collections;
 import java.util.Stack;
 
 /*
@@ -98,6 +99,7 @@ public class LC155 {
         minStack.pop();
         System.out.println(minStack.top());    // return 0
         System.out.println(minStack.getMin());
+
 
     }
 }
